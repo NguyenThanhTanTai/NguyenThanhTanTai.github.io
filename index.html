@@ -1,49 +1,111 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>My Site</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <style>
-    body,
-    h1 {
-      font-family: "Raleway", sans-serif
-    }
-
-    body,
-    html {
-      height: 100%
-    }
-
-    .bgimg {
-      background-image: url('https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1920&q=80');
-      min-height: 100%;
-      background-position: center;
-      background-size: cover;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tan Tai's personal portfolio website">
+  <title>Tan Tai | Portfolio</title>
 </head>
+<body class="bg-slate-950 text-white">
 
-<body>
-  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-    <div class="w3-display-topleft w3-padding-large w3-xlarge">
-      Tan Tai Portfolio
-    </div>
-    <div class="w3-display-middle">
-      <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-      <hr class="w3-border-grey" style="margin:auto;width:40%">
-      <p class="w3-large w3-center">10 days left</p>
-    </div>
-  </div>
-  <div class="flex flex-row justify-center items-center p-12">
-  <h1 class="text-5xl text-green-300 animate-bounce">
-    Hello, Tailwind CSS
-  </h1>
-</div>
+  <!-- Navigation -->
+  <header class="border-b border-slate-800">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+      <a href="#" class="text-xl font-bold text-green-400">Tan Tai.</a>
+      <div class="flex gap-6 text-sm text-slate-300">
+        <a href="#about" class="hover:text-green-400">About</a>
+        <a href="#projects" class="hover:text-green-400">Projects</a>
+        <a href="#contact" class="hover:text-green-400">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="mx-auto flex min-h-[70vh] max-w-6xl flex-col justify-center px-6 py-20">
+      <p class="mb-4 font-medium text-green-400">HELLO, I'M</p>
+      <h1 class="text-5xl font-bold tracking-tight md:text-7xl">
+        Nguyen Thanh Tan Tai
+      </h1>
+      <h2 class="mt-4 text-2xl text-slate-400 md:text-3xl">
+        Software Engineering Student
+      </h2>
+      <p class="mt-6 max-w-2xl leading-8 text-slate-300">
+        I am learning software development and building projects
+        to improve my programming skills.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <a href="#projects"
+           class="rounded-lg bg-green-400 px-6 py-3 font-semibold text-slate-950 hover:bg-green-300">
+          View My Projects
+        </a>
+        <a href="#contact"
+           class="rounded-lg border border-slate-600 px-6 py-3 hover:border-green-400">
+          Contact Me
+        </a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="border-t border-slate-800 bg-slate-900/50">
+      <div class="mx-auto max-w-6xl px-6 py-20">
+        <h2 class="text-3xl font-bold">About Me</h2>
+        <p class="mt-6 max-w-3xl leading-8 text-slate-300">
+          I am a Software Engineering student interested in web development,
+          programming, and building useful applications. I enjoy learning
+          new technologies and improving through practical projects.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="mx-auto max-w-6xl px-6 py-20">
+      <h2 class="text-3xl font-bold">My Projects</h2>
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        <article class="rounded-xl border border-slate-800 bg-slate-900 p-6">
+          <h3 class="text-xl font-semibold text-green-400">Student Management</h3>
+          <p class="mt-3 leading-7 text-slate-300">
+            A Java application for managing student information and GPA.
+          </p>
+        </article>
+
+        <article class="rounded-xl border border-slate-800 bg-slate-900 p-6">
+          <h3 class="text-xl font-semibold text-green-400">Digit Classifier</h3>
+          <p class="mt-3 leading-7 text-slate-300">
+            A Python machine learning project for recognizing handwritten digits.
+          </p>
+        </article>
+
+        <article class="rounded-xl border border-slate-800 bg-slate-900 p-6">
+          <h3 class="text-xl font-semibold text-green-400">Portfolio Website</h3>
+          <p class="mt-3 leading-7 text-slate-300">
+            A personal website built with HTML, Tailwind CSS, and Vite.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="border-t border-slate-800 bg-slate-900/50">
+      <div class="mx-auto max-w-6xl px-6 py-20">
+        <h2 class="text-3xl font-bold">Contact Me</h2>
+        <p class="mt-4 text-slate-300">
+          Feel free to connect with me about projects or opportunities.
+        </p>
+        <a href="https://github.com/NguyenThanhTanTai"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="mt-6 inline-block rounded-lg bg-green-400 px-6 py-3 font-semibold text-slate-950 hover:bg-green-300">
+          Visit My GitHub
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="px-6 py-6 text-center text-sm text-slate-500">
+    © 2026 Tan Tai. Built with HTML and Tailwind CSS.
+  </footer>
+
+  <script type="module" src="/src/scripts/application.js"></script>
 </body>
-<script type="module" src="/src/scripts/application.js"></script>
 </html>
-
